@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="BT5">
+<meta name="description" content="project html">
+<meta name="keywords" content="html , html work">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="2 days">
+<meta name="author" content="MinhazSharjil">
+<title>JQ</title>
+<!--favicon link-->
+<link rel="icon" type="image/png" href="images/np.png">
+<link rel="stylesheet" href="icon/7stroke/css/pe-icon-7-stroke.css">
+<!-- icon links -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+<!--css link-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+</head>
+<body>
+
+  <!-- alert --><hr>
+  <h2>click the button to show image</h2>
+<button type="button" class="btn btn-dark" id="sb"
+>
+  Show
+</button>
+<button type="button" class="btn btn-dark" id="hb">
+ hide
+</button>
+<img src="images/himuro.jpg" alt="jq">
+
+
+
+<p>Hello</p>
+<span>Hello Again</span>
+ 
+<div class="left">
+  <p><strong>Before <code>addBack()</code></strong></p>
+  <div class="before-addback">
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+  </div>
+</div>
+<div class="right">
+  <p><strong>After <code>addBack()</code></strong></p>
+  <div class="after-addback">
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+  </div>
+</div>
+<div>This div should be white</div>
+ <div class="red">This div will be green because it now has the "green" and "red" classes.
+   It would be red if the addClass function failed.</div>
+ <div>This div should be white</div>
+ <p>There are zero green divs</p>
+ <div class="container">
+      <!-- alert -->
+      <h2>Click the Button Show Alert!</h2>
+      <button type="button" id="alertBtn" class="btn btn-primary">Show Alert</button>
+<hr>
+      <!-- text change -->
+      <h2>Click the Button Change Text!</h2>
+      <p id="textBox">Click the button to change this text.</p>
+      <button type="button" id="textChangeBtn" class="btn btn-success">Text Change</button>      
+<hr>
+      <!-- Toggle Visibility -->
+      <h2>Toggle Visibility</h2>
+      <div id="toggleBox" class="alert alert-info">This text can be hidden or shown</div>
+      <button type="button" id="toggleBtn" class="btn btn-danger">Toggle Visibility</button>
+<hr>
+<!-- Fade In & Fade Out -->
+  <h2>Fade In & Fade Out</h2>
+  <div id="fadeBox" class="alert alert-warning" style="display:none;">This box fades in and out</div>
+  <button type="button" id="fadeInBtn" class="btn btn-primary">Fade In</button>
+  <button type="button" id="fadeOutBtn" class="btn btn-warning">Fade Out</button>
+<hr>
+<!-- Slide Toggle Effect -->
+  <h2>Slide Toggle Effect</h2>
+  <div id="slideBox" class="alert alert-success">This box slides up and down Lorem ipsum dolor 
+    sit amet consectetur adipisicing elit. Nobis optio cum id, molestias ipsum vero laudantium numquam hic maiores nostrum.</div>
+  <button type="button" id="slideBtn" class="btn btn-success">Slide Toggle</button>
+<hr>
+<!-- Add/Remove Class -->
+  <h2>Add/Remove Class</h2>
+  <style>
+      .highlight{background-color: yellow; padding: 10px;}
+  </style>
+  <div id="classBox" class="p-3 border">click the button to heiglight.</div>
+  <button type="button" id="classBtn" class="btn btn-dark">Toggle Highlight</button>
+<hr>
+<!-- Changing Image Source on Click -->
+  <h2>Changing Image Source on Click</h2>
+  <img id="imgBox" src="image/bike11.jpg" alt="Image 1" class="img-fluid">
+  <button type="button" id="imgChBtn" class="btn btn-primary">Change Image</button>
+<hr>
+  <!--Fetch Data from JSON File (AJAX) -->
+  <h2>Fetch Data from JSON File (AJAX)</h2>
+  <div id="dataContainer" class="p-3 border"></div>
+  <button type="button" id="fetchDataBtn" class="btn btn-info">Fetch Data</button>
+<hr>
+<!-- jQuery Hover Effect -->
+  <h2>jQuery Hover Effect</h2>
+  <div id="hoverBox" class="p-3 border">Hover over this box!</div>
+<hr>
+<!-- Append & Prepend -->
+ <div class="card p-3 mb-3">
+<h5 class="text-bg-dark">Append & Prepend</h5>
+<button id="appendBtn" class="btn btn-primary">Append</button>
+<button id="prependBtn" class="btn btn-secondary">Prepend</button>
+<p id="appendText" class="mt-3">This is paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reiciendis voluptatum maiores libero illum deserunt quidem consectetur explicabo id fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, id!</p>
+</div>
+<hr>
+<!-- Blur Event -->
+<div class="card p-3 mb-3">
+  <h5>Blur Event</h5>
+  <input type="text" id="blurInput" class="form-control" placeholder="Type something and click away">
+  <p id="blurMessage" clas="mt-2 text-muted"></p>
+</div>
+<hr>
+<!-- Double Click -->
+<div class="card p-3 mb-3">
+  <h5>Double Click</h5>
+  <button id="dblClickBtn" class="btn btn-danger">Double Click Me</button>
+  <p id="dblClickMsg" class="mt-2"></p>
+</div>
+<hr>
+<!-- Mouse Position -->
+<div class="card p-3 mb-3">
+  <h5>Mouse Position</h5>
+  <p>Move your mouse here!</p>
+  <p>X: <span id="posX"></span> Y: <span id="posY"></span></p>
+</div>
+<hr>
+<!-- Focus and FocusOut -->
+  <div class="card p-3 mb-3">
+    <h5>Focus & FocusOut</h5>
+    <input type="text" id="focusInput" class="form-control" placeholder="Focus on me">
+<hr>
+<!-- Scroll Event -->
+  <div class="card p-3 mb-3" style="height: 100px; overflow-y:scroll;">
+    <h5>Scroll Event</h5>
+    <div style="height: 300px;">Scroll me!</div>
+    <p id="scrollMsg" class="mt-2 text-success"></p>
+  </div>
+  <hr>
+  <!-- show/hide on click -->
+  <div class="card p-3 mb-3">
+    <h5>Show/Hide on Click</h5>
+    <button id="showAnswerBtn" class="btn btn-warning">Show Answer</button>
+    <p id="answer" class="hidden mt-3">This is the answer Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium nesciunt, facilis quae debitis quod perferendis vitae soluta ipsum ipsam dolorum harum consequuntur porro omnis beatae deleniti quos sunt aperiam. Suscipit neque magnam delectus illo, velit laudantium quasi laborum quisquam. Neque inventore vitae maiores, 
+      ad sunt maxime perferendis distinctio quibusdam!</p>
+  </div>
+  <hr>
+  <div class="card p-3 mb-3">
+    <h5>Hide with Delay</h5>
+    <button id="hideParaBtn" class="btn btn-secondary">Hide Paragraph</button>
+    <p id="hidePara" class="mt-3">This paragraph will disappear after 2 seconds. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel fuga excepturi neque placeat, quis nulla minima dignissimos suscipit labore debitis omnis nam laborum inventore repellendus quo iusto non repellat eum id iste at quas? Labore laborum consectetur consequatur? Consequuntur, recusandae. Molestiae 
+      assumenda omnis quisquam aperiam odio unde ad harum repellendus!</p>
+  </div>
+  <hr>
+  <!-- Check Even or Odd -->
+  <div class="card p-3 mb-3">
+    <h5>Check Even or Odd</h5>
+    <input type="number" id="numberInput" class="form-control" placeholder="Enter a number">
+    <button id="checkNumberBtn" class="btn btn-primary mt-2">Check</button>
+    <p id="numberResult" class="mt-2"></p>
+</div>
+<hr>
+<!--Show/Hide Based on Selection -->
+    <div class="card p-3 mb-3">
+        <h5>5. Show Message Based on Selection</h5>
+        <select id="choiceSelect" class="form-select">
+            <option value="">Select an option</option>
+            <option value="hello">Say Hello</option>
+            <option value="bye">Say Goodbye</option>
+        </select>
+        <p id="choiceMessage" class="mt-2"></p>
+    </div>
+    <!--Login Validation -->
+    <div class="card p-3 mb-3">
+        <h5>Simple Login Validation</h5>
+        <input type="text" id="username" class="form-control mb-2" placeholder="Username">
+        <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+        <button id="loginBtn" class="btn btn-danger">Login</button>
+        <p id="loginMessage" class="mt-2"></p>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+ <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
